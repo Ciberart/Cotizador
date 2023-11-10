@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE, edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .correct { color: green; }
+        .incorrect { color: red; text-decoration: line-through; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="Stylespri.css">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="title"> 
+                <h1>Test English</h1>
+            </div>
+            <ul><li><a href="Index.html" class="Inicio">Inicio</a></li>
+                <li><a href="primerej.html" class="cotizador">Test English</a></li>
+                <li><a href="combobox.html" class="cuestionary">Capitales</a></li>
+                <li><a href="CotizadorCarpa.html" class="encuesta">Cotizador</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Test English</h1>
+
+    <br>
+    <br>
+    <br>
+
+    <form id="quizForm">
+        <h1>Can I park here?</h1>
+        <div>
+            <input type="radio" name="group1" value="0" id="valor1" checked="true">
+            <label for="valor1">Sorry, I did that.</label>
+        </div>
+        <div>
+            <input type="radio" name="group1" value="0" id="valor2">
+            <label for="valor2">It's the same place.</label>
+        </div>
+        <div>
+            <input type="radio" name="group1" value="10" id="valor3">
+            <label for="valor3">Only for half an hour.</label>
+        </div>
+        <div>
+            <input type="radio" name="group1" value="0" id="valor4">
+            <label for="valor4">I don't know.</label>
+        </div>
+        <div>
+            <input type="radio" name="group1" value="0" id="valor5">
+            <label for="valor5">I'm not sure.</label>
+        </div>
+        <br>
+
+        <h1>What colour will you paint the children's bedroom?</h1>
+        <div>
+            <input type="radio" name="group2" value="0" id="valor6" checked="true">
+            <label for="valor6">I hope it was right.</label>
+        </div>
+        <div>
+            <input type="radio" name="group2" value="10" id="valor7">
+            <label for="valor7">We can't decide.</label>
+        </div>
+        <div>
+            <input type="radio" name="group2" value="0" id="valor8">
+            <label for="valor8">It wasn't very difficult.</label>
+        </div>
+        <div>
+            <input type="radio" name="group2" value="0" id="valor9">
+            <label for="valor9">I don't like any color.</label>
+        </div>
+        <div>
+            <input type="radio" name="group2" value="0" id="valor10">
+            <label for="valor10">Let's decide later.</label>
+        </div>
+        <br>
+
+        <h1>I can't understand this email.</h1>
+        <div>
+            <input type="radio" name="group3" value="10" id="valor11" checked="true">
+            <label for="valor11">Would you like some help?</label>
+        </div>
+        <div>
+            <input type="radio" name="group3" value="0" id="valor12">
+            <label for="valor12">Don't you know?</label>
+        </div>
+        <div>
+            <input type="radio" name="group3" value="0" id="valor13">
+            <label for="valor13">I suppose you can.</label>
+        </div>
+        <div>
+            <input type="radio" name="group3" value="0" id="valor14">
+            <label for="valor14">I have no idea.</label>
+        </div>
+        <div>
+            <input type="radio" name="group3" value="0" id="valor15">
+            <label for="valor15">I can't help you.</label>
+        </div>
+        <br>
+
+        <h1>I'd like two tickets for tomorrow night.</h1>
+        <div>
+            <input type="radio" name="group4" value="0" id="valor16" checked="true">
+            <label for "valor16">How much did you pay??</label>
+        </div>
+        <div>
+            <input type="radio" name="group4" value="0" id="valor17">
+            <label for="valor17">Afternoon and evening.</label>
+        </div>
+        <div>
+            <input type="radio" name="group4" value="10" id="valor18">
+            <label for="valor18">I'll just check for you.</label>
+        </div>
+        <div>
+            <input type="radio" name="group4" value="0" id="valor19">
+            <label for="valor19">I can't help you with that.</label>
+        </div>
+        <div>
+            <input type="radio" name="group4" value="0" id="valor20">
+            <label for="valor20">I'm not the ticket seller.</label>
+        </div>
+        <br>
+
+        <h1>I'd like two tickets for tomorrow night.</h1>
+        <div>
+            <input type="radio" name="group5" value="10" id="valor21" checked="true">
+            <label for="valor21">How much did you pay??</label>
+        </div>
+        <div>
+            <input type="radio" name="group5" value="0" id="valor22">
+            <label for="valor22">Afternoon and evening.</label>
+        </div>
+        <div>
+            <input type="radio" name="group5" value="0" id="valor23">
+            <label for="valor23">I'll just check for you.</label>
+        </div>
+        <div>
+            <input type="radio" name="group5" value="0" id="valor24">
+            <label for="valor24">How many tickets do you need?</label>
+        </div>
+        <div>
+            <input type="radio" name="group5" value="0" id="valor25">
+            <label for="valor25">I'm not the ticket seller.</label>
+        </div>
+        <br>
+
+        <h1>Shall we go to the gym now?</h1>
+        <div>
+            <input type="radio" name="group6" value="10" id="valor26" checked="true">
+            <label for="valor26">I'm too tired.</label>
+        </div>
+        <div>
+            <input type="radio" name="group6" value="0" id="valor27">
+            <label for="valor27">It's very good.</label>
+        </div>
+        <div>
+            <input type="radio" name="group6" value="0" id="valor28">
+            <label for="valor28">Not at all.</label>
+        </div>
+        <div>
+            <input type="radio" name="group6" value="0" id="valor29">
+            <label for="valor29">I don't like the gym.</label>
+        </div>
+        <div>
+            <input type="radio" name="group6" value="0" id="valor30">
+            <label for="valor30">Sure, let's go.</label>
+        </div>
+        <br>
+
+        <h1>His eyes were ...... bad that he couldn't read the number plate of the car in front.</h1>
+        <div>
+            <input type="radio" name="group7" value="0" id="valor31" checked="true">
+            <label for="valor31">such</label>
+        </div>
+        <div>
+            <input type="radio" name="group7" value="0" id="valor32">
+            <label for="valor32">too</label>
+        </div>
+        <div>
+            <input type="radio" name="group7" value="10" id="valor33">
+            <label for="valor33">so</label>
+        </div>
+        <div>
+            <input type="radio" name="group7" value="0" id="valor34">
+            <label for="valor34">very</label>
+        </div>
+        <div>
+            <input type="radio" name="group7" value="0" id="valor35">
+            <label for="valor35">not</label>
+        </div>
+        <br>
+
+        <h1>The company needs to decide ...... and for all what its position is on this point.</h1>
+        <div>
+            <input type="radio" name="group8" value="0" id="valor36" checked="true">
+            <label for="valor36">here</label>
+        </div>
+        <div>
+            <input type="radio" name="group8" value="10" id="valor37">
+            <label for="valor37">once</label>
+        </div>
+        <div>
+            <input type="radio" name="group8" value="0" id="valor38">
+            <label for="valor38">first</label>
+        </div>
+        <div>
+            <input type="radio" name="group8" value="0" id="valor39">
+            <label for="valor39">finally</label>
+        </div>
+        <div>
+            <input type="radio" name="group8" value="0" id="valor40">
+            <label for="valor40">before</label>
+        </div>
+        <br>
+
+        <h1>Don't put your cup on the ...... of the table – someone will knock it off.</h1>
+        <div>
+            <input type="radio" name="group9" value="0" id="valor41" checked="true">
+            <label for="valor41">outside</label>
+        </div>
+        <div>
+            <input type="radio" name="group9" value="10" id="valor42">
+            <label for="valor42">edge</label>
+        </div>
+        <div>
+            <input type="radio" name="group9" value="0" id="valor43">
+            <label for="valor43">boundary</label>
+        </div>
+        <div>
+            <input type="radio" name="group9" value="0" id="valor44">
+            <label for="valor44">border</label>
+        </div>
+        <div>
+            <input type="radio" name="group9" value="0" id="valor45">
+            <label for="valor45">middle</label>
+        </div>
+        <br>
+
+        <h1>I'm sorry - I didn't ...... to disturb you.</h1>
+        <div>
+            <input type="radio" name="group10" value="0" id="valor46" checked="true">
+            <label for="valor46">hope</label>
+        </div>
+        <div>
+            <input type="radio" name="group10" value="0" id="valor47">
+            <label for="valor47">think</label>
+        </div>
+        <div>
+            <input type="radio" name="group10" value="10" id="valor48">
+            <label for="valor48">mean</label>
+        </div>
+        <div>
+            <input type="radio" name="group10" value="0" id="valor49">
+            <label for="valor49">suppose</label>
+        </div>
+        <div>
+            <input type="radio" name="group10" value="0" id="valor50">
+            <label for="valor50">intend</label>
+        </div>
+        <br>
+
+        <button type="button" id="submitBtn" onclick="gradeQuiz()">Enviar</button>
+        <button type="button" id="resetBtn" onclick="resetQuiz()" disabled>Reiniciar</button>
+    </form>
+
+   <!-- Agrega un div para mostrar los resultados -->
+<div id="result" class="result"></div>
+
+<br>
+
+
+
+    <script>
+        function gradeQuiz() {
+            const questions = document.querySelectorAll('input[type="radio"]:checked');
+            let score = 0;
+            for (const question of questions) {
+                score += parseInt(question.value);
+            }
+        
+            const result = document.getElementById('result');
+            result.textContent = `Tu porcentaje: ${score}/100`;
+        
+            // Restaurar el contenido original de las etiquetas
+            const allLabels = document.querySelectorAll('label');
+            for (const label of allLabels) {
+                label.textContent = label.textContent.replace('✔ ', '').replace('❌ ', '');
+                label.classList.remove('correct', 'incorrect');
+            }
+        
+            // Marcar las respuestas correctas e incorrectas
+            for (const question of questions) {
+                const label = question.nextElementSibling;
+                if (question.value === "10") {
+                    label.textContent = '✔ ' + label.textContent;
+                    label.classList.add('correct');
+                } else {
+                    label.textContent = '❌ ' + label.textContent;
+                    label.classList.add('incorrect');
+                }
+            }
+        }
+        
+        
+
+        function resetQuiz() {
+            const questions = document.querySelectorAll('input[type="radio"]');
+            for (const question of questions) {
+                question.checked = false;
+                const label = question.nextElementSibling;
+                label.classList.remove('correct', 'incorrect');
+                label.innerHTML = label.innerHTML.replace('✔ ', '').replace('❌ ', '');
+            }
+            document.getElementById('result').innerHTML = '';
+        }
+
+        const submitButton = document.getElementById("submitBtn");
+        const resetButton = document.getElementById("resetBtn");
+        submitButton.addEventListener("click", function() {
+            gradeQuiz();
+            submitButton.disabled = true;
+            resetButton.disabled = false;
+        });
+        resetButton.addEventListener("click", function() {
+            resetQuiz();
+            submitButton.disabled = false;
+            resetButton.disabled = true;
+        });
+    </script>
+
+      
+
+    <footer>
+        <p>&copy; 2023 Alexis Castillo. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

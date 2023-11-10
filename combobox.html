@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="stylecom.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="title"> 
+          <h1>Capitales</h1>
+      </div>
+      <ul><li><a href="Index.html" class="Inicio">Inicio</a></li>
+          <li><a href="primerej.html" class="cotizador">Test English</a></li>
+          <li><a href="combobox.html" class="cuestionary">Capitales</a></li>
+          <li><a href="CotizadorCarpa.html" class="encuesta">Cotizador</a></li>
+      </ul>
+  </nav>
+    <h1></h1>
+  </header>
+  
+  <form id="quizForm">
+    <ol>
+      <li>
+        <label for="q1">Bruselas, es la capital del país denominado:</label>
+        <select name="q1" id="q1">
+          <option value="">Selecciona una opción</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="belgica">Bélgica</option>
+          <option value="buenosaires">Buenos Aires</option>
+          <option value="puertorico">Puerto Rico</option>
+        </select>
+        <span id="feedback1"></span>
+        <img src="img/Brusuelas.jpg" alt="Imagen 1">
+      </li>
+      <br> 
+
+      <li>
+        <label for="q2">La capital de Argentina es:</label>
+        <select name="q2" id="q2">
+          <option value="">Selecciona una opción</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="belmopan">Belmopan</option>
+          <option value="buenosaires">Buenos Aires</option>
+          <option value="puertorico">Puerto Rico</option>
+        </select>
+        <span id="feedback2"></span>
+        <img src="img/Arg.jpg" alt="Imagen 2">
+      </li>
+
+      <br>
+
+      <!-- Repite este patrón para las demás preguntas -->
+      <li>
+        <label for="q3">San José es la capital de:</label>
+        <select name="q3" id="q3">
+          <option value="">Selecciona una opción</option>
+          <option value="brasil">Brasil</option>
+          <option value="argentina">Argentina</option>
+          <option value="puertorico">Puerto Rico</option>
+          <option value="costarica">Costa Rica</option>
+        </select>
+        <span id="feedback3"></span>
+        <img src="img/san-jose-costa-rica-aerial-city-skyline.jpg" alt="Imagen 3">
+      </li>
+      <br>
+
+      <li>
+        <label for="q4">La capital de Venezuela es:</label>
+        <select name="q4" id="q4">
+          <option value="">Selecciona una opción</option>
+          <option value="tegucigalpa">Tegucigalpa</option>
+          <option value="managua">Managua</option>
+          <option value="panama">Panamá</option>
+          <option value="caracas">Caracas</option>
+        </select>
+        <span id="feedback4"></span>
+        <img src="img/Venezuela.jpg" alt="Imagen 4">
+      </li>
+      <br>
+
+      <li>
+        <label for="q5">Brasilia, es la capital del país:</label>
+        <select name="q5" id="q5">
+          <option value="">Selecciona una opción</option>
+          <option value="colombia">Colombia</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="brasil">Brasil</option>
+        </select>
+        <span id="feedback5"></span>
+        <img src="img/Brasil.jpg" alt="Imagen 5">
+      </li>
+      <br> 
+
+      <li>
+        <label for="q6">La capital de Perú es:</label>
+        <select name="q6" id="q6">
+          <option value="">Selecciona una opción</option>
+          <option value="sucre">Sucre</option>
+          <option value="bogota">Bogotá</option>
+          <option value="montevideo">Montevideo</option>
+          <option value="lima">Lima</option>
+        </select>
+        <span id="feedback6"></span>
+        <img src="img/lima.jpg" alt="Imagen 6">
+      </li>
+      <br> 
+
+      <li>
+        <label for="q7">Puerto España es la capital de:</label>
+        <select name="q7" id="q7">
+          <option value="">Selecciona una opción</option>
+          <option value="surinam">Surinam</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="brasil">Brasil</option>
+          <option value="trinidadtobago">Trinidad y Tobago</option>
+        </select>
+        <span id="feedback7"></span>
+        <img src="img/trinidad.jpg" alt="Imagen 7">
+      </li>
+
+      <br> 
+
+      <li>
+        <label for="q8">Cuba, país cuya capital es:</label>
+        <select name="q8" id="q8">
+          <option value="">Selecciona una opción</option>
+          <option value="kingston">Kingston</option>
+          <option value="santodomingo">Santo Domingo</option>
+          <option value="lahabana">La Habana</option>
+          <option value="castries">Castries</option>
+        </select>
+        <span id="feedback8"></span>
+        <img src="img/Cuba.jpg" alt="Imagen 8">
+      </li>
+      <br> 
+
+      <li>
+        <label for="q9">Managua, es la capital que pertenece a:</label>
+        <select name="q9" id="q9">
+          <option value="">Selecciona una opción</option>
+          <option value="panama">Panamá</option>
+          <option value="honduras">Honduras</option>
+          <option value="nicaragua">Nicaragua</option>
+          <option value="belice">Belice</option>
+        </select>
+        <span id="feedback9"></span>
+        <img src="img/Managua.jpg" alt="Imagen 9">
+      </li>
+      <br> 
+
+      <li>
+        <label for="q10">Ecuador, tiene como capital:</label>
+        <select name="q10" id="q10">
+          <option value="">Selecciona una opción</option>
+          <option value="parabarimo">Parabarimo</option>
+          <option value="montevideo">Montevideo</option>
+          <option value="asuncion">Asunción</option>
+          <option value="quito">Quito</option>
+        </select>
+        <span id="feedback10"></span>
+        <img src="img/Ecuad.jpg" alt="Imagen 10">
+      </li>
+    </ol>
+    
+    <input type="button" value="Calificar" onclick="gradeQuiz();">
+    <input type="button" value="Reiniciar" onclick="resetQuiz();">
+  </form>
+  
+  <p>Puntuación obtenida: <span id="score">0</span></p>
+  <p id="scoreMessage"></p>
+  
+
+  <br>
+  <br>
+  <br>
+
+ 
+
+  <script type="text/javascript">
+    function gradeQuiz() {
+      var score = 0;
+      var feedback;
+      
+      var correctAnswers = ["belgica", "buenosaires", "costarica", "caracas", "brasil", "lima", "trinidadtobago", "lahabana", "nicaragua", "quito"];
+
+      for (var i = 1; i <= 10; i++) {
+        var selectId = "q" + i;
+        var selectedOption = document.getElementById(selectId).value;
+        var feedbackId = "feedback" + i;
+
+        if (selectedOption === correctAnswers[i - 1]) {
+          score++;
+          feedback = "Correcta - Felicitaciónes!";
+        } else {
+          feedback = "Incorrecta - La respuesta correcta es " + correctAnswers[i - 1];
+        }
+
+        document.getElementById(feedbackId).innerText = feedback;
+      }
+
+      // Actualiza la puntuación total
+      document.getElementById("score").innerText = score;
+    }
+
+    function resetQuiz() {
+      var selects = document.querySelectorAll('select');
+      for (var i = 0; i < selects.length; i++) {
+        selects[i].selectedIndex = 0;
+      }
+
+      var feedbackSpans = document.querySelectorAll('span[id^="feedback"]');
+      for (var i = 0; i < feedbackSpans.length; i++) {
+        feedbackSpans[i].innerText = '';
+      }
+
+      document.getElementById("score").innerText = '0';
+    }
+  </script>
+
+  <script type="text/javascript">
+    function gradeQuiz() {
+      var score = 0;
+  
+      // Define los símbolos para respuestas correctas e incorrectas
+      var correctSymbol = "✔";
+      var incorrectSymbol = "❌";
+  
+      var feedback;
+      var message;
+  
+      var correctAnswers = ["belgica", "buenosaires", "costarica", "caracas", "brasil", "lima", "trinidadtobago", "lahabana", "nicaragua", "quito"];
+  
+      for (var i = 1; i <= 10; i++) {
+        var selectId = "q" + i;
+        var selectedOption = document.getElementById(selectId).value;
+        var feedbackId = "feedback" + i;
+  
+        var feedbackSpan = document.getElementById(feedbackId);
+        if (selectedOption === correctAnswers[i - 1]) {
+          score++;
+          feedback = "Correcta " + correctSymbol;
+          feedbackSpan.style.color = "green";
+        } else {
+          feedback = "Incorrecta " + incorrectSymbol;
+          feedbackSpan.style.color = "red";
+        }
+  
+        // Agrega el símbolo a la respuesta
+        feedbackSpan.innerHTML = feedback;
+      }
+  
+      // Actualiza la puntuación total
+      document.getElementById("score").innerText = score;
+  
+      // Agrega un mensaje según la puntuación
+      if (score < 7) {
+        message = "Uy, parece que necesitas estudiar más. Ya casi lo tienes.";
+      } else {
+        message = "¡Felicidades, tienes un buen conocimiento sobre las capitales!";
+      }
+      document.getElementById("scoreMessage").innerText = message;
+    }
+  
+    function resetQuiz() {
+      var selects = document.querySelectorAll('select');
+      for (var i = 0; i < selects.length; i++) {
+        selects[i].selectedIndex = 0;
+      }
+  
+      var feedbackSpans = document.querySelectorAll('span[id^="feedback"]');
+      for (var i = 0; i < feedbackSpans.length; i++) {
+        feedbackSpans[i].innerText = '';
+      }
+  
+      document.getElementById("score").innerText = '0';
+      document.getElementById("scoreMessage").innerText = '';
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2023 Alexis Castillo. Todos los derechos reservados.</p>
+  </footer>
+
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #283ec9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Estilos para la barra de navegación */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para los enlaces de navegación */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+/* ... (otros estilos existentes) */
+
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Estilos generales para mejorar la apariencia */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el resultado */
+.result {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para las respuestas correctas */
+.correct {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Estilos para las respuestas incorrectas */
+.incorrect {
+    color: #FF0000;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #101b24;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: dixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para el pie de página enlaces */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+body, button {
+    font-size: 16px;
+}
+
+/* Estilos para los títulos de las preguntas */
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las etiquetas de las respuestas */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los espacios entre elementos */
+br {
+    margin: 10px 0;
+}

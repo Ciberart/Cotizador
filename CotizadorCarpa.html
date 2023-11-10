@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styleCarpa.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col col-md-8 mr-md-auto ml-md-auto">
+                <div id="contenido">
+                    <header>
+                        <h1 class="text-center">Cotiza tu Carpa</h1>
+                    </header>
+                    <div class="row contenido-formulario">
+                        <div class="col col-md-10 mr-md-auto ml-md-auto ms-5">
+                            <form action="#" id="cotizar-seguro" onsubmit="calcularPrecio(); return false;">
+
+
+                                <div class="form-group"> 
+                                    <label for="Tamaño">Tamaño De la carpa:</label>
+                                    <select class="form-control" id="material">
+                                        <option value="">- Seleccionar -</option>
+                                        <option value="1">Pequeña ($1500)</option>
+                                        <option value="2">Mediana ($2300)</option>
+                                        <option value="3">Grande ($3600)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Duracion">Duracion del servicio:</label>
+                                    <select class="form-control" id="firma">
+                                        <option value="">- Seleccionar -</option>
+                                        <option value="1">Un dia($200)</option>
+                                        <option value="2">Fin de semana ($450) </option>
+                                        <option value="3">Semana completa ($1150)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Montaje">Montaje y desmontaje:</label>
+                                    <div>
+                                        <input type="radio" id="clienteMontaje" name="montaje" value="1">
+                                        <label for="clienteMontaje">Cliente ($0)</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="personalMontaje" name="montaje" value="2">
+                                        <label for="personalMontaje">Personal ($250)</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Adicionales">Servicios adicionales:</label>
+                                    <div>
+                                        <input type="checkbox" id="nada" name="servicio" value="1">
+                                        <label for="nada">Nada adicional ($0)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="iluminacion" name="servicio" value="2">
+                                        <label for="iluminacion">Iluminacion($200)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="decoracion" name="servicio" value="3">
+                                        <label for="decoracion">Decoracion Tematica ($350)</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Sillas"> Sillas :</label>
+                                    <select class="form-control" id="parteTrasera">
+                                        <option value="">- Seleccionar -</option>
+                                        <option value="1">Cliente ($0)</option>
+                                        <option value="2">8 sillas ($150)</option>
+                                        <option value="3">16 Sillas ($260)</option>
+                                        <option value="4">24 Sillas ($345)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Mesas"> Mesas:</label>
+                                    <select class="form-control" id="color">
+                                        <option value="">- Seleccionar -</option>
+                                        <option value="1">Cliente ($0)</option>
+                                        <option value="2">4 Mesas ($150)</option>
+                                        <option value="3">6 mesas ($260)</option>
+                                        <option value="4">8 mesas ($345)</option>
+                                        <option value="5">12 mesas ($450)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Entrega">Entrega:</label>
+                                    <div>
+                                        <input type="radio" id="clienteEntrega" name="entregaTipo" value="1">
+                                        <label for="clienteEntrega">Ciudad local ($150)</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="personalEntrega" name="entregaTipo" value="2">
+                                        <label for="personalEntrega">Afueras de la ciudad ($300)</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Seguro"> Seguro contra daños:</label>
+                                    <select class="form-control" id="luchador">
+                                        <option value="">- Seleccionar -</option>
+                                        <option value="1">Sin seguro ($0) </option>
+                                        <option value="2">Basico (Incluye solamente mesas y sillas) ($250)</option>
+                                        <option value="3">Completo ($585)</option>
+                                    </select>
+                                </div>
+
+                                <div id="cargando">
+                                    <img src="img/spinner.gif">
+                                </div>
+                                <div id="resultado"></div>
+                                <div class="form-group mb-3">
+                                    <button type="submit" class="btn btn-raised btn-primary ">Cotizar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+   
+   <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    function calcularTotal() {
+      
+      const precios = {
+        tamano: [1500, 2300, 3600],
+        duracion: [200, 450, 1150],
+        montaje: [0, 250],
+        adicionales: [0, 200, 350],
+        sillas: [0, 150, 260, 345],
+        mesas: [0, 150, 260, 345, 450],
+        entrega: [150, 300],
+        seguro: [0, 250, 585]
+      };
+
+      // Get selected values
+      const tamano = document.getElementById('material').value;
+      const duracion = document.getElementById('firma').value;
+      const montaje = document.querySelector('input[name="montaje"]:checked').value;
+      const adicionales = document.querySelectorAll('input[name="servicio"]:checked');
+      const sillas = document.getElementById('parteTrasera').value;
+      const mesas = document.getElementById('color').value;
+      const entrega = document.querySelector('input[name="entregaTipo"]:checked').value;
+      const seguro = document.getElementById('luchador').value;
+
+      // Calculate subtotal
+      let subtotal = precios.tamano[tamano - 1] +
+        precios.duracion[duracion - 1] +
+        precios.montaje[montaje - 1];
+
+      adicionales.forEach(function (adicional) {
+        subtotal += precios.adicionales[adicional.value - 1];
+      });
+
+      subtotal += precios.sillas[sillas - 1] +
+        precios.mesas[mesas - 1] +
+        precios.entrega[entrega - 1] +
+        precios.seguro[seguro - 1];
+
+      // Calculate total with 16% VAT
+      const iva = 0.16;
+      const total = subtotal * (1 + iva);
+
+      // Display the result
+      document.getElementById('resultado').innerHTML = `<p>Total: $${total.toFixed(2)}</p>`;
+    }
+
+    // Event listener for the form submission
+    document.getElementById('cotizar-seguro').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form submission
+      calcularTotal(); // Calculate and display the total
+    });
+  });
+</script>
+
+<footer>
+    <p>&copy; 2023 Alexis Castillo. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
